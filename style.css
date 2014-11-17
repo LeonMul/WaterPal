@@ -1,1 +1,16 @@
 body
+{
+background-color:#EDEDF3;
+font:orange;
+margin:0;
+padding:0;
+}
+
+#MenuBar
+{
+width:100%;
+height:200px;
+background:#003366
+;
+}
+
