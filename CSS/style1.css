@@ -1,0 +1,134 @@
+body
+{
+font:orange;
+background-color:#787878 ;
+}
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+	}
+
+li {
+float: left;
+}
+
+a:link, a:visited {
+display: block;
+width: 200px;
+font-weight: bold;
+color: #FFFFFF;
+background-color: #003366;
+text-align: center;
+padding: 35px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+a:hover, a:active {
+background-color: #FF6633;
+}
+
+	
+#MenuBar
+{
+width:100%;
+height:90px;
+background:;
+}
+
+
+#MenuBar li.active a {
+background: #FF6633;
+}
+
+
+#Middle
+{
+width:100%;
+height:450px;
+/*background:#FFFFFF;
+*/
+}
+
+#leftmiddle
+{
+width:50%;
+height:450px;
+background:red;
+float:left;
+padding:0;
+}
+
+#rightmiddle
+{
+width:50%;
+height:450px;
+background:blue;
+float:right;
+padding:0;
+
+}
+
+#Bottom
+{
+width:100%;
+height:200px;
+/*background:#003366; */
+
+}
+
+
+	
+#one
+{
+width:20%;
+height:200px;
+background:red;
+float:left;
+}
+
+#two
+{
+width:20%;
+height:200px;
+background:green;
+float:left;
+}
+
+#three
+{
+width:20%;
+height:200px;
+background:blue;
+float:left;
+}
+
+#four
+{
+width:20%;
+height:200px;
+background:yellow;
+float:left;
+}
+
+#five
+{
+width:20%;
+height:200px;
+background:black;
+float:left;
+}
+
+
+	
+	
+	
+	
+	
+
+
+
