@@ -1,14 +1,40 @@
 body
 {
-font:orange;
+font-family:calibri;
 }
 
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+ float: left;
+ }
+
+a:link, a:visited {
+display: block;
+width: 200px;
+font-weight: bold;
+color: #FFFFFF;
+background-color: #003366;
+text-align: center;
+padding: 35px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+a:hover, a:active {
+background-color: #FF6633;
+}
 
 
 #MenuBar
 {
 width:100%;
-height:90px;
+height:80px;
 background:;
 
 }
@@ -37,39 +63,69 @@ width:100%;
 height:20px;
 }
 
-#Bottom
+
+
+#Bottom  /*Note- divs One to Five below are inside this div*/
 {
 width:100%;
-height:200px;
-background:#003366;
+height:150px;
 }
 
-
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
+	
+#one
+{
+width:20%;
+height:150px;
+background:	#1A3366;
+color:#FF6633;
+font-weight:bold;
+float:left;
 }
 
-li {
- float: left;
- }
+#two
+{
+width:20%;
+height:150px;
+background:	#1A3366;
+float:left;
+}
 
-a:link, a:visited {
-display: block;
-width: 200px;
-font-weight: bold;
-color: #FFFFFF;
-background-color: #003366;
+#three
+{
+width:20%;
+height:150px;
+background:#1A3366;
+float:left;
+}
+
+#four
+{
+width:20%;
+height:150px;
+background:#1A3366;
+float:left;
+}
+
+#five
+{
+width:20%;
+height:150px;
+background:#1A3366;
+color:#FF6633;
+font-weight:bold;
+float:left;
+
+}
+
+#final
+{
+width:100%;
+height:50px;
+background:	#00143D;
+font-family:calibri;
+color:#FF6633;
+font-weight:bold;
 text-align: center;
-padding: 35px;
-text-decoration: none;
-text-transform: uppercase;
-}
-
-a:hover, a:active {
-background-color: #FF6633;
 }
 
 
