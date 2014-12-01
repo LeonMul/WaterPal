@@ -15,7 +15,7 @@ li {
 float: left;
 }
 
-a:link, a:visited {
+li a:link, a:visited {
 display: block;
 width: 200px;
 font-weight: bold;
@@ -27,7 +27,7 @@ text-decoration: none;
 text-transform: uppercase;
 }
 
-a:hover, a:active {
+li a:hover, li a:active {
 background-color: #FF6633;
 }
 
@@ -55,19 +55,23 @@ height:450px;
 {
 width:50%;
 height:450px;
-background:;
 float:left;
 padding:0;
 }
+
+#leftmiddle img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:55px;
+	}
 
 #rightmiddle
 {
 width:50%;
 height:450px;
-background:;
 float:right;
 padding:0;
-
 }
 
 #Bottom  /*Note- divs One to Five below are inside this div*/
@@ -82,9 +86,11 @@ height:150px;
 {
 width:20%;
 height:150px;
-background:	#1A3366;
+background:#1A3366;
+line-height:8px;
 color:#FF6633;
 font-weight:bold;
+font-size:15px;
 float:left;
 }
 
@@ -92,7 +98,11 @@ float:left;
 {
 width:20%;
 height:150px;
-background:	#1A3366;
+background:#1A3366;
+line-height:8px;
+color:#FF6633;
+font-weight:bold;
+font-size:15px;
 float:left;
 }
 
@@ -101,6 +111,10 @@ float:left;
 width:20%;
 height:150px;
 background:#1A3366;
+line-height:8px;
+color:#FF6633;
+font-weight:bold;
+font-size:15px;
 float:left;
 }
 
@@ -109,6 +123,10 @@ float:left;
 width:20%;
 height:150px;
 background:#1A3366;
+line-height:8px;
+color:#FF6633;
+font-weight:bold;
+font-size:15px;
 float:left;
 }
 
@@ -117,8 +135,10 @@ float:left;
 width:20%;
 height:150px;
 background:#1A3366;
+line-height:8px;
 color:#FF6633;
 font-weight:bold;
+font-size:15px;
 float:left;
 
 }
@@ -137,12 +157,15 @@ font-size:13px;
 
 #par1
 {
-color:#FF6633
+color:#FF6633;
+font-weight:bold;
+font-size:24px;
 }
 
 #par2
 {
-color:#FF6633
+color:#FF6633;
+font-size:16px;
 }
 
 
@@ -168,6 +191,7 @@ font-size:13px;
 .newsletterbutton:hover{
      background:#FF6633;
 }
+
 
 
 

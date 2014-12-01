@@ -25,70 +25,103 @@
 		</div> 
 		<hr>
 		<div id="Middle">
+				<div id="leftmiddle">  
+				<form action = "file:///C:/Users/Leon96/Documents/College/HTML/Semester%201%20Project/index.html">
+				
+					<fieldset>
+					<legend>Contact Information:</legend>
+					
+					First name:<br>
+					<input type="text" name="firstname" value=" ">
+					<br>
+					Last name:<br>
+					<input type="text" name="lastname" value=" ">
+					<br>
+					Address:<br>
+					<input type="text" name="address" value=" ">
+					<br>
+					Phone Number:<br>
+					<input type="text" name="phone" value=" ">
+					<br>
+					Email:<br>
+					<input type="text" name="email" value=" ">
+					<br>
+					<input type="radio" name="usage" value="commercial">Commercial
+					<br>
+					<input type="radio" name="usage" value="personal">Personal
+					<br>
+					<button onclick="myFunction2()">Submit</button>
+					</fieldset>
+					</form> 
+				</div>
+			
+			<div id="rightmiddle"> </div>
+		</div>
 		
 		
-		<form action = "file:///C:/Users/Leon96/Documents/College/HTML/Semester%201%20Project/index.html">>
-	<fieldset>
-	<legend>Contact Information:</legend>
-
-
-	First name:<br>
-	<input type="text" name="firstname" value=" ">
-	<br>
-	Last name:<br>
-	<input type="text" name="lastname" value=" ">
-	<br>
-	Address:<br>
-	<input type="text" name="address" value=" ">
-	<br>
-	Phone Number:<br>
-	<input type="text" name="phone" value=" ">
-	<br>
-	Email:<br>
-	<input type="text" name="email" value=" ">
-	<br>
-	<input type="radio" name="usage" value="commercial">Commercial
-	<br>
-	<input type="radio" name="usage" value="personal">Personal
-	<br>
-	<button onclick="myFunction2()">Submit</button>
-	</fieldset>
-	</form>
-	
+		
 	
 		
 		</div>
 		<div id ="Separator2"></div>
 		
 		<div id="Bottom">
-			<div id="one">Enhance your WaterPal experience!
+			<div id="one">
+			<p>Enhance your WaterPal experience!</p>
+			<a href = "https://www.facebook.com/">
 			<img src="images/facebook.jpg" alt="facebook" width="150" height="45">
+			</a>
+			<p> </p>
+			<a href = "https://twitter.com/?lang=en">
 			<img src="images/twitter.jpg" alt="twitter" width="150" height="45">
+			</a>
 			</div>
-			<div id="two"> </div>
-			<div id="three"> </div>
-			<div id="four"> </div>
+			<div id="two">
+			<p>Our Senior Engineers:<p>
+			<br>Patrick O'Brien </br>
+			<br>Larry Hogan</br>
+			<br>Sean McCabe</br>
+			<br>John Monaghan</br>
+			</div>
+			<div id="three"> 
+			<p>Our IT Support Managers:</p>
+			<br>Pearse Neeson<br>
+			<br>Paul Howie</br>
+			<br>Alan Wallace</br>
+			<br>Aoife Kayleen</br></div>
+			
+			<div id="four">
+			<p>Our Developers:<p>
+			<br>Leon Mulvaney </br>
+			<br>Aaron Healy</br>
+			<br>Alex Russell</br>
+			<br>Keith Ferguson</br>
+
+			</div>
 			<div id="five">
-			Download the App:
-			<img src="images/googleplay.png" alt="googleplay" width="150" height="45">
+			<p>Download the App:</p>
+			<a href="https://play.google.com/store?hl=en">
+			<img src="images/googleplay.png" alt="googleplay" width="150" height="45" border ="0"> 
+			</a>
+			<p> </p>	
+			<a href = "http://www.apple.com/ie/itunes/features/?ls=1&at=10lpgy&ct=000000-ie-g-brand&cid=wwa-ie-kwg-music-itu#store">
 			<img src="images/appstore.png" alt="appstore" width="150" height="45">
+			</a>
 			</div>
 		</div>
 		
-			<div id ="final"> 
-			<form action = "file:///C:/Users/Leon96/Documents/College/HTML/Semester%201%20Project/index.html">
+		<div id ="final"> 
+			<form action = "index.html">
 			Connect with us:
 			<input type="email" name="email" value="">
 			<button onclick = "myFunction3()"class = "newsletterbutton"type="submit"> Subscribe to our newsletter </button>
 			</form>
+
 			Copyright 2014 WaterPalSoftware Ltd. All rights reserved. WaterPal is a Trade Mark of WaterPal Software Ltd. 
 		</div>
+		
 	
 		<script>
-			function myFunction2() {
-			alert("Thank you for your submission, a member of our team will get back to you as soon as possible.");
-			}
-	
 			function myFunction3() {
 			alert("Thank you for signing up to the WaterPal newsletter! You will recieve a confirmation email shortly, alongside a welcome pack ");
 			}
