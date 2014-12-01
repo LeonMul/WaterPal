@@ -26,10 +26,10 @@
 		<hr>
 		<div id="Middle">
 				<div id="leftmiddle">  
-				<form action = "file:///C:/Users/Leon96/Documents/College/HTML/Semester%201%20Project/index.html">
+				<form action = "index.html">
 				
-					<fieldset>
-					<legend>Contact Information:</legend>
+					<fieldset id = "fieldset">
+					<legend>Place a Query:</legend>
 					
 					First name:<br>
 					<input type="text" name="firstname" value=" ">
@@ -46,16 +46,23 @@
 					Email:<br>
 					<input type="text" name="email" value=" ">
 					<br>
+					Queries:<br>
+					<input type="textbox" name="Queries" value=" ">
+					<br>
 					<input type="radio" name="usage" value="commercial">Commercial
 					<br>
 					<input type="radio" name="usage" value="personal">Personal
 					<br>
-					<button onclick="myFunction2()">Submit</button>
+					<button onclick="contactForm()">Submit</button>
 					</fieldset>
 					</form> 
 				</div>
 			
-			<div id="rightmiddle"> </div>
+			<div id="rightmiddle">
+			<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.4837944715296!2d-6.2509764999999735!3d53.334595399999934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ebd50f7d50d%3A0x9971d6044ba71192!2s14+Fitzwilliam+Square+E%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1416329445155" width="100%" height="350px" frameborder="0" style="border:0"></iframe>
+			</div>
+			
 		</div>
 		
 		
@@ -69,19 +76,19 @@
 			<div id="one">
 			<p>Enhance your WaterPal experience!</p>
 			<a href = "https://www.facebook.com/">
-			<img src="images/facebook.jpg" alt="facebook" width="150" height="45">
+			<img src="images/FacebookLogo.png" alt="facebook" width="150" height="45">
 			</a>
 			<p> </p>
 			<a href = "https://twitter.com/?lang=en">
-			<img src="images/twitter.jpg" alt="twitter" width="150" height="45">
+			<img src="images/TwitterLogo.jpg" alt="twitter" width="150" height="45">
 			</a>
 			</div>
 			<div id="two">
 			<p>Our Senior Engineers:<p>
-			<br>Patrick O'Brien </br>
+			<br>John Monaghan</br>
 			<br>Larry Hogan</br>
 			<br>Sean McCabe</br>
-			<br>John Monaghan</br>
+			<br>Patrick O'Brien </br>
 			</div>
 			<div id="three"> 
 			<p>Our IT Support Managers:</p>
@@ -124,6 +131,9 @@
 		<script>
 			function myFunction3() {
 			alert("Thank you for signing up to the WaterPal newsletter! You will recieve a confirmation email shortly, alongside a welcome pack ");
+			}
+			function contactForm(){
+			alert("Thank you for the submission,a member of our team will contact you shortly.")
 			}
 		</script>
 	</body>

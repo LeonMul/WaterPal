@@ -89,7 +89,14 @@ line-height:8px;
 color:#FF6633;
 font-weight:bold;
 font-size:15px;
+text-align:center;
 float:left;
+}
+
+#one img{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 #two
@@ -138,7 +145,13 @@ color:#FF6633;
 font-weight:bold;
 font-size:15px;
 float:left;
+text-align:center;
+}
 
+#five img{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 #final
