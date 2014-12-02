@@ -1,24 +1,14 @@
 body
 {
 font-family:calibri;
-background-image:images/waterpal.jpg;
+margin:0;
+padding:0;
 }
 
 
-ul {
-list-style-type: none;
-margin: 0;
-padding:0 ;
-overflow: hidden;
-}
-
-li {
-float: left;
-}
-
-li a:link, li a:visited {
+.menubarclass:link, .menubarclass :visited {
 display: block;
-width: 200px;
+width: 100%;
 font-weight: bold;
 color: #FFFFFF;
 background-color: #003366;
@@ -26,36 +16,47 @@ text-align: center;
 padding: 35px;
 text-decoration: none;
 text-transform: uppercase;
+
 }
 
-li a:hover, li a:active {
+.menubarclass:hover
+{
 background-color: #FF6633;
 }
+
+/*.menubarclass:active 
+{
+background-color:#FF6633;
+}
+*/
+
 
 	
 #MenuBar
 {
 width:100%;
 height:80px;
-background:;
+background:#003366;
+font-size:22px;
+font-weight:bold;
+text-align:center;
+}
+/* Unvisited Links */
+a:link{
+color:white;
 }
 
-
-#MenuBar li.active a {
-background: #FF6633;
-}
-
-#Separator1
+/* Visited links */
+a:visited
 {
-width:100%;
-height:20px;
-color:red;
+color:white;
 }
 
-#Separator2
+#menu1,#menu2,#menu3,#menu4,#menu5
 {
-width:100%;
-height:20px;
+width:20%;
+height:80px;
+float:left;
 }
 
 
@@ -221,6 +222,7 @@ font-size:13px;
 .newsletterbutton:hover{
      background:#FF6633;
 }
+
 
 
 
