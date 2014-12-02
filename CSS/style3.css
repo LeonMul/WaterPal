@@ -69,10 +69,31 @@ float:left;
 }
 
 
+#Separator1
+{
+width:100%;
+height:20px;
+}
+
 #Middle
 {
 width:100%;
-height:450px;
+height:900px;
+}
+
+#separater{
+width:100%;
+height:20px;
+background-color:;
+margin:0;
+padding:0;
+}
+
+#separater2{
+width:100%;
+height:20px;
+margin:0;
+padding:0;
 }
 
 
@@ -240,4 +261,65 @@ font-size:13px;
 
 .newsletterbutton:hover{
      background:#FF6633;
+}
+
+
+
+#container{
+
+	width:604px;
+	height:453px;
+	position:relative;
+	position:center;
+	float:left;
+	 box-shadow: 5px 5px 2.5px #888888;
+	
+}
+
+#container .prevButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:left top;
+	left:0
+}
+
+#container .prevButton:hover{ background-position:left bottom;left:0;}
+
+#container .nextButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:right top;
+	right:0
+}
+
+#container .nextButton:hover{background-position:right bottom;right:0;}
+
+#container ul{
+	width:604px;
+	height:453px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#container li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#container li{
+	position:absolute;
+	display:none;
 }

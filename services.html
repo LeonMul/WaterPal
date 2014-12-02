@@ -23,8 +23,128 @@
 		<div id="Middle">
 		Here at WaterPal we offer a wide variety of services.
 		As we belive in simplicity, we will do all we can to make your life that little bit easier. 
+		
+		<center>
+<h1>Equipment and Staff</h1>
+<br /><br />
+		
+		<div id="container">
+			<ul>	
+			<li><img src="images/picture3.jpg" width="604" height="453" /></li>
+			<li><img src="images/picture1.jpg" width="604" height="453" /></li>
+            <li><img src="images/picture2.jpg" width="604" height="453" /></li>
+            <li><img src="images/keith.jpg" width="604" height="453" /></li>
+			<li><img src="images/picture4.jpg" width="604" height="453" /></li>
+			<li><img src="images/picture5.jpg" width="604" height="453" /></li>
+			
+			
+		</ul>
+		<span class="button prevButton"></span>
+		<span class="button nextButton"></span>
+		</div>
+		</center>
+
+		<script src="../jquery-1.4.2.min.js"></script>
 		</div>
 		
+		
+		
+			
+
+<script>
+$(window).load(function(){
+		var pages = $('#container li'), current=0;
+		var currentPage,nextPage;
+		var timeoutID;
+		var buttonClicked=0;
+
+		var handler1=function(){
+			buttonClicked=1;
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if($(this).hasClass('prevButton'))
+			{
+				if (current <= 0)
+					current=pages.length-1;
+				else
+					current=current-1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",-604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+					currentPage.hide();
+				});
+				currentPage.animate({ marginLeft: 604 }, 800,function(){
+					$('#container .button').bind('click',handler1);
+				});
+			}
+			else
+			{
+
+				if (current >= pages.length-1)
+					current=0;
+				else
+					current=current+1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+				});
+				currentPage.animate({ marginLeft: -604 }, 800,function(){
+					currentPage.hide();
+					$('#container .button').bind('click',handler1);
+				});
+			}		
+		}
+
+		var handler2=function(){
+			if (buttonClicked==0)
+			{
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if (current >= pages.length-1)
+				current=0;
+			else
+				current=current+1;
+			nextPage = pages.eq(current);	
+			nextPage.css("marginLeft",604);
+			nextPage.show();
+			nextPage.animate({ marginLeft: 0 }, 800,function(){
+			});
+			currentPage.animate({ marginLeft: -604 }, 800,function(){
+				currentPage.hide();
+				$('#container .button').bind('click',handler1);
+			});
+			timeoutID=setTimeout(function(){
+				handler2();	
+			}, 4000);
+			}
+		}
+
+		$('#container .button').click(function(){
+			clearTimeout(timeoutID);
+			handler1();
+		});
+
+		timeoutID=setTimeout(function(){
+			handler2();	
+			}, 4000);
+		
+});
+
+</script>
+
+
+				<div id="separater2"></div>
+			<div id="separater"></div>
+			
+			
+			
+			
+			
+			
 		
 		
 		<div id="Bottom">

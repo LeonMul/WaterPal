@@ -63,13 +63,13 @@ float:left;
 #Middle
 {
 width:100%;
-height:450px;
+height:900px;
 }
 
 #leftmiddle
 {
 width:50%;
-height:450px;
+height:900px;
 float:left;
 padding:0;
 }
@@ -84,7 +84,7 @@ margin-top:55px;
 #rightmiddle
 {
 width:50%;
-height:450px;
+height:900px;
 float:right;
 padding:0;
 }

@@ -19,12 +19,158 @@
 		
 		<div id="Middle">
 			
-			<div id ="leftmiddle">
-			Here at WaterPal Industries, we believe in the simplicity.
-			</div> 
-			<div id ="rightmiddle">	</div> 
+			<div id="leftmiddle">
+			
+			<img src="images/builders.jpg" width="400" height="400" />
+			
+			</div>
+			
+			<div id="rightmiddle">
+			<br>
+			<br>
+			<p span id ="par1">Welcome to waterpal industries, Meet the team.</p>
+			<span id = "par2"> Here at Waterpal we strive for excellence in service and its products but behind the great service is a lot of great people. 
+								Ranging from the It Support and customer service people upstairs or the skilled installers who you trust to do a good job.
+								The idea came about after we first heard of the water taxes, there was a lot of talk of water meters and allowances etc 
+								but nothing about how to monitor how much water you use, so the four co-founders, Aaron Healy, Leon Mulvaney, Alex Russell 
+								and Keith Ferguson came up with Waterpal.
+								
+			<p> It took a while to get it going and all together, but eventually the pieces fell into place and when people began 
+				to hear of our products and the amazing price we were soon busy at work. The main appeal seemed to have been the 
+				variety of meters and ways to monitor them such as the user friendly app for ios and android phones or the website 
+				which gives you detailed analysis of the water usage over the days. As well as the text message reminder which alert 
+				customers to when there is a lot of water being used or when allowances are running  low.
+				</p>
+		
+								
+								
+								
+			<p id = "info"> We strive to achieve the highest standards within our business, may it be Application development all the way to IT Support.</p>
+			</div>		
 			</div>
 	
+	
+	
+	
+	
+	
+	<center>
+<h1>Our Team</h1>
+<br /><br />
+
+<div id="container">
+	<ul>	
+			<li><img src="images/picture3.jpg" width="604" height="453" /></li>
+			<li><img src="images/aaron.jpg" width="604" height="453" /></li>
+            <li><img src="images/leon.jpg" width="604" height="453" /></li>
+            <li><img src="images/keith.jpg" width="604" height="453" /></li>
+			<li><img src="images/alex.jpg" width="604" height="453" /></li>
+			
+      </ul>
+      <span class="button prevButton"></span>
+      <span class="button nextButton"></span>
+</div>
+</center>
+
+<script src="../jquery-1.4.2.min.js"></script>
+
+<script>
+$(window).load(function(){
+		var pages = $('#container li'), current=0;
+		var currentPage,nextPage;
+		var timeoutID;
+		var buttonClicked=0;
+
+		var handler1=function(){
+			buttonClicked=1;
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if($(this).hasClass('prevButton'))
+			{
+				if (current <= 0)
+					current=pages.length-1;
+				else
+					current=current-1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",-604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+					currentPage.hide();
+				});
+				currentPage.animate({ marginLeft: 604 }, 800,function(){
+					$('#container .button').bind('click',handler1);
+				});
+			}
+			else
+			{
+
+				if (current >= pages.length-1)
+					current=0;
+				else
+					current=current+1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+				});
+				currentPage.animate({ marginLeft: -604 }, 800,function(){
+					currentPage.hide();
+					$('#container .button').bind('click',handler1);
+				});
+			}		
+		}
+
+		var handler2=function(){
+			if (buttonClicked==0)
+			{
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if (current >= pages.length-1)
+				current=0;
+			else
+				current=current+1;
+			nextPage = pages.eq(current);	
+			nextPage.css("marginLeft",604);
+			nextPage.show();
+			nextPage.animate({ marginLeft: 0 }, 800,function(){
+			});
+			currentPage.animate({ marginLeft: -604 }, 800,function(){
+				currentPage.hide();
+				$('#container .button').bind('click',handler1);
+			});
+			timeoutID=setTimeout(function(){
+				handler2();	
+			}, 4000);
+			}
+		}
+
+		$('#container .button').click(function(){
+			clearTimeout(timeoutID);
+			handler1();
+		});
+
+		timeoutID=setTimeout(function(){
+			handler2();	
+			}, 4000);
+		
+});
+
+</script>
+
+
+
+			<div id="separater2"></div>
+			<div id="separater"></div>
+			
+			
+			
+			
+			
+			
+			
+			
 		
 			<div id="Bottom">
 				<div id="one">
