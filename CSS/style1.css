@@ -135,6 +135,7 @@ text-align:center;
 {
 font-size:60px;
 }
+
 #par1
 {
 color:#FF6633;
@@ -146,9 +147,9 @@ font-size:26px;
 #info , #par2
 {
 color:#FF6633;
-font-size:22px;
+font-size:20px;
 font-weight:bold;
-line-height:100%;
+line-height:95%;
 }
 
 #Bottom  /*Note- divs One to Five below are inside this div*/
