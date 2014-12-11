@@ -63,13 +63,13 @@ float:left;
 #Middle
 {
 width:100%;
-height:900px;
+height:425px;
 }
 
 #leftmiddle
 {
 width:50%;
-height:900px;
+height:425px;
 float:left;
 padding:0;
 }
@@ -84,11 +84,57 @@ margin-top:55px;
 #rightmiddle
 {
 width:50%;
-height:900px;
+height:425px;
 float:right;
 padding:0;
+line-height:1.5;
 }
 
+#appdiv
+{
+width:100%;
+height:275px;
+}
+
+#appright
+{
+width:65%;
+height:275px;
+
+float:right;
+}
+
+#appleft
+{
+width:35%;
+height:275px;
+float:left;
+}
+
+#appleft img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#appdiv1{
+font-size:50px;
+color:#FF6633;
+font-weight:bold;
+text-align:center;
+}
+
+#appdiv2{
+font-size:40px;
+color:#FF6633;
+font-weight:bold;
+text-align:center;
+}
+
+.appdownload
+{
+font-size:60px;
+}
 #par1
 {
 color:#FF6633;
@@ -100,8 +146,9 @@ font-size:26px;
 #info , #par2
 {
 color:#FF6633;
+font-size:22px;
 font-weight:bold;
-font-size:15px;
+line-height:100%;
 }
 
 #Bottom  /*Note- divs One to Five below are inside this div*/
