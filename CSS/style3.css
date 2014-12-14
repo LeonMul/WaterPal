@@ -69,11 +69,7 @@ float:left;
 }
 
 
-#Separator1
-{
-width:100%;
-height:20px;
-}
+
 
 #Middle
 {
@@ -96,6 +92,32 @@ height:540px;
 float:right;
 }
 
+
+#servicesPar1
+{
+color:#FF6633;
+font-size:20px;
+font-weight:bold;
+line-height:95%;
+}
+
+#servicesPar2
+{
+color:#FF6633;
+font-size:20px;
+font-weight:bold;
+line-height:95%;
+}
+
+
+
+.providedServices
+{
+color:#FF6633;
+font-size:20px;
+font-weight:bold;
+line-height:20%;
+}
 
 #Bottom
 {
